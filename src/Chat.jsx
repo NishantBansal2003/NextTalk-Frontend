@@ -23,7 +23,7 @@ export default function Chat() {
 
   function connectToWs() {
     // Function to establish a WebSocket connection
-    const ws = new WebSocket("ws://nexttalkbackend-4ixd.onrender.com"); // Create a new WebSocket instance
+    const ws = new WebSocket("wss://nexttalkbackend-4ixd.onrender.com"); // Create a new WebSocket instance
     setWs(ws); // Update the state variable "ws" with the WebSocket instance
     ws.addEventListener("message", handleMessage); // Add an event listener for incoming messages
     ws.addEventListener("close", () => {
